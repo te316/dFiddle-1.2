@@ -23,6 +23,9 @@
                 { url: 'master-detail', moduleId: 'samples/masterDetail/index', name: 'Master Detail', visible: true },
                 { url: 'master-detail/:name', moduleId: 'samples/masterDetail/index', name: 'Examples' },
 
+                { url: 'airprots', moduleId: 'samples/airports', name: 'Airports', visible: true },
+                { url: 'airports/:name', moduleId: 'samples/airports', name: 'Examples' },
+                
                 { url: 'knockout-samples/:name', moduleId: 'samples/knockout/index', name: 'Knockout Samples' },
                 { url: 'knockout-samples', moduleId: 'samples/knockout/index', name: 'Knockout Samples', visible: true }
             ]);
