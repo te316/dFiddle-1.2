@@ -16,6 +16,10 @@ define(['durandal/app', 'durandal/system', 'durandal/viewLocator'],
         viewLocator.useConvention();
 
         app.adaptToDevice();
+        kendo.ns = "kendo-";
+        viewModelBinder.beforeBind = function (obj, view) {
+            kendo.bind(view, obj.viewModel || obj);
+        };
         app.setRoot('samples/shell');
     });
 });
