@@ -4,8 +4,8 @@
     }
 });
 
-define(['durandal/app', 'durandal/system', 'durandal/viewLocator'],
-  function (app, system, viewLocator) {
+define(['durandal/app', 'durandal/system', 'durandal/viewLocator','durandal/viewModelBinder'],
+  function (app, system, viewLocator, viewModelBinder) {
     
     system.debug(true);
     
