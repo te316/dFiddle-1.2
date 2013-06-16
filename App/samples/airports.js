@@ -5,7 +5,7 @@ define(['durandal/plugins/router'],
         var activate = function () {
             var service = $data.initService("https://open.jaystack.net/c72e6c4b-27ba-49bb-9321-e167ed03d00b/6494690e-1d5f-418d-adca-0ac515b7b742/api/mydatabase/");
             return service.then(function (db) {
-                db.Airport.asKendoDataSource(vm.airports);
+                vm.airports = db.Airport.asKendoDataSource();
             });
 
         };
