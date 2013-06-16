@@ -1,5 +1,5 @@
-define(['services/datacontext', 'durandal/plugins/router'],
-    function (datacontext, router) {
+define(['durandal/plugins/router'],
+    function (router) {
         
         
         var activate = function () {
